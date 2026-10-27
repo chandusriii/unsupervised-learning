@@ -9,6 +9,16 @@ A hands-on collection of Python notebooks exploring unsupervised machine learnin
 - `hierarchical_clustering.ipynb` — hierarchical clustering and dendrograms.
 - `DBSCAN.ipynb` — density-based clustering and noise points.
 
+## Learning notebooks
+
+- **K-Means:** [KMeans.ipynb](KMeans.ipynb)
+- **K-Means on Iris:** [KMeansForIris.ipynb](KMeansForIris.ipynb)
+- **Hierarchical clustering:** [hierarchical_clustering.ipynb](hierarchical_clustering.ipynb)
+- **DBSCAN:** [DBSCAN.ipynb](DBSCAN.ipynb)
+- **Concept reference:** [CONCEPTS_AND_SCIKIT_LEARN_REFERENCES.md](docs/CONCEPTS_AND_SCIKIT_LEARN_REFERENCES.md)
+
+The four original notebooks supplied for this project have been added to the repository. The concepts guide is a separate reference for additional explanations and official documentation.
+
 ## Topics
 
 - Clustering fundamentals and feature scaling
