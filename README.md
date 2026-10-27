@@ -34,7 +34,11 @@ Study density-based clustering, including core points, noise, and non-linear dat
 | [DBSCAN clustering](03-DBSCAN/01_dbscan_clustering.ipynb) | `eps`, `min_samples`, cluster labels, noise points, non-linear data |
 | [DBSCAN section guide](03-DBSCAN/README.md) | Parameter interpretation and learning notes |
 
-### 04. Concepts and official documentation
+### 04. Part 2 — PCA and Anomaly Detection
+
+Continue with the [Part 2 learning path](Part-2/README.md), which covers PCA step by step, Isolation Forest, Local Outlier Factor (LOF), and DBSCAN noise points using the uploaded notebooks and thyroid dataset.
+
+### 05. Concepts and official documentation
 
 Use the [concepts and Scikit-learn references guide](docs/CONCEPTS_AND_SCIKIT_LEARN_REFERENCES.md) alongside the notebooks.
 
@@ -46,6 +50,7 @@ Official references:
 - [DBSCAN API](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html)
 - [Silhouette score API](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html)
 - [SciPy dendrogram API](https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.dendrogram.html)
+- [Part 2 PCA and anomaly-detection references](Part-2/docs/ANOMALY_DETECTION_AND_PCA_REFERENCES.md)
 
 ## Setup
 
