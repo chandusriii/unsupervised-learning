@@ -1,53 +1,44 @@
-# Unsupervised Learning
+# Unsupervised Machine Learning
 
-A hands-on collection of Python notebooks exploring unsupervised machine learning with Scikit-learn. Topics include K-Means clustering, the Elbow Method, inertia, silhouette score, hierarchical clustering, dendrograms, DBSCAN, and cluster visualizations.
+A hands-on learning repository for **Unsupervised Learning with Python and Scikit-learn**. It follows a topic-by-topic learning path, from K-Means fundamentals to hierarchical clustering and density-based clustering.
 
-## Notebooks
+The notebooks are organized in the order you can study them. The original notebooks you supplied are retained; they have been moved into clearly named topic folders rather than mixed together at the repository root.
 
-- `KMeans.ipynb` — K-Means concepts and implementation.
-- `KMeansForIris.ipynb` — K-Means clustering using the Iris dataset.
-- `hierarchical_clustering.ipynb` — hierarchical clustering and dendrograms.
-- `DBSCAN.ipynb` — density-based clustering and noise points.
+## Learning path
 
-## Learning notebooks
+### 01. K-Means Clustering
 
-- **K-Means:** [KMeans.ipynb](KMeans.ipynb)
-- **K-Means on Iris:** [KMeansForIris.ipynb](KMeansForIris.ipynb)
-- **Hierarchical clustering:** [hierarchical_clustering.ipynb](hierarchical_clustering.ipynb)
-- **DBSCAN:** [DBSCAN.ipynb](DBSCAN.ipynb)
-- **Concept reference:** [CONCEPTS_AND_SCIKIT_LEARN_REFERENCES.md](docs/CONCEPTS_AND_SCIKIT_LEARN_REFERENCES.md)
+Start with K-Means on generated blob data, then move to the Iris dataset.
 
-The four original notebooks supplied for this project have been added to the repository. The concepts guide is a separate reference for additional explanations and official documentation.
+| Resource | Topics |
+|---|---|
+| [K-Means fundamentals, Elbow Method, and Silhouette Score](01-KMeans/01_kmeans_blobs_elbow_silhouette.ipynb) | Centroids, cluster labels, inertia/WCSS, choosing K, Elbow Method, silhouette score |
+| [K-Means with the Iris dataset](01-KMeans/02_kmeans_iris.ipynb) | Load Iris features, scale features, fit K-Means, inspect and visualize cluster assignments |
+| [K-Means section guide](01-KMeans/README.md) | Learning order and concept notes |
 
-## Topics
+### 02. Hierarchical Clustering
 
-- Clustering fundamentals and feature scaling
-- Choosing K with inertia and the Elbow Method
-- Evaluating separation with silhouette score
-- Hierarchical/agglomerative clustering and dendrograms
-- K-Means vs. hierarchical clustering
-- DBSCAN parameters (`eps`, `min_samples`) and noise detection
-- Visualizing clusters and interpreting results
+Learn agglomerative clustering and how to read a dendrogram.
 
-## Setup
+| Resource | Topics |
+|---|---|
+| [Hierarchical clustering and dendrogram](02-Hierarchical-Clustering/01_hierarchical_clustering_dendrogram.ipynb) | Feature scaling, linkage, hierarchical merging, dendrogram |
+| [Hierarchical clustering guide](02-Hierarchical-Clustering/README.md) | How the method works and what to inspect |
 
-Python 3.10+ is recommended.
+### 03. DBSCAN
 
-```bash
-python -m venv .venv
-```
+Study density-based clustering, including core points, noise, and non-linear datasets.
 
-Activate the environment, then install dependencies:
+| Resource | Topics |
+|---|---|
+| [DBSCAN clustering](03-DBSCAN/01_dbscan_clustering.ipynb) | `eps`, `min_samples`, cluster labels, noise points, non-linear data |
+| [DBSCAN section guide](03-DBSCAN/README.md) | Parameter interpretation and learning notes |
 
-```bash
-python -m pip install -r requirements.txt
-jupyter notebook
-```
+### 04. Concepts and official documentation
 
-Open a notebook and run its cells from top to bottom.
+Use the [concepts and Scikit-learn references guide](docs/CONCEPTS_AND_SCIKIT_LEARN_REFERENCES.md) alongside the notebooks.
 
-## Official documentation
-
+Official references:
 - [Scikit-learn: Unsupervised learning](https://scikit-learn.org/stable/unsupervised_learning.html)
 - [Scikit-learn: Clustering](https://scikit-learn.org/stable/modules/clustering.html)
 - [KMeans API](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
@@ -56,6 +47,23 @@ Open a notebook and run its cells from top to bottom.
 - [Silhouette score API](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html)
 - [SciPy dendrogram API](https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.dendrogram.html)
 
-## Note
+## Setup
 
-For the Iris clustering examples, use feature measurements to fit unsupervised algorithms. Species labels can be used for post-clustering comparison, but should not be used as input labels when fitting the clustering model.
+Python 3.10+ is recommended. From the repository directory:
+
+```bash
+python -m venv .venv
+```
+
+Activate the environment, then install dependencies and launch Jupyter:
+
+```bash
+python -m pip install -r requirements.txt
+jupyter notebook
+```
+
+Open the notebooks in the order above and run their cells from top to bottom.
+
+## Important note on Iris
+
+Iris species labels are known labels. To keep the example genuinely unsupervised, use the feature measurements to fit K-Means. Species labels may be compared with cluster assignments afterward as a separate educational check; they should not be used as target labels during fitting. Cluster IDs are arbitrary and do not map automatically to species names.
