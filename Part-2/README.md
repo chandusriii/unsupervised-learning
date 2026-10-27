@@ -1,0 +1,1 @@
+Part 2 is the final stage of the Unsupervised Learning study path. It covers PCA and anomaly detection. The complete prepared bundle can be downloaded from the conversation artifact `unsupervised-learning-part-2.zip` and its notebooks/data copied here.
